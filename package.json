@@ -1,0 +1,25 @@
+{
+  "name": "designPractice",
+  "version": "1.0.0",
+  "description": "Making a clean website focused on design principles.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diminako/designPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diminako/designPractice/issues"
+  },
+  "homepage": "https://github.com/diminako/designPractice#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
