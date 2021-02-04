@@ -442,7 +442,7 @@ body {
 .card__picture {
   background-size: cover;
   height: 23rem;
-  background-blend-mode: screen;
+  background-blend-mode: color;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
@@ -485,6 +485,16 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
 }
 
+.card__heading-span--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(46, 234, 242, 0.8)), to(rgba(46, 100, 242, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(46, 234, 242, 0.8), rgba(46, 100, 242, 0.8));
+}
+
+.card__heading-span--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+}
+
 .card__details {
   padding: 3rem;
 }
@@ -511,6 +521,15 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.card__back--text {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.card__link {
+  margin: 2rem 0rem;
 }
 
 .header {

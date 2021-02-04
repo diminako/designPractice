@@ -55,7 +55,7 @@
     &__picture {
         background-size: cover;
         height: 23rem;
-        background-blend-mode: screen;
+        background-blend-mode: color;
         -webkit-clip-path: polygon(
             0 0, 
             100% 0, 
@@ -113,6 +113,18 @@
                 rgba($color-light-orange, .8), 
                 rgba($color-dark-orange, .8));
         }
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-light-blue, .8), 
+                rgba($color-dark-blue, .8));
+        }
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($color-light-green, .8), 
+                rgba($color-dark-green, .8));
+        }
     }
 
     &__details {
@@ -140,5 +152,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__back--text {
+        font-size: 2rem;
+        color: $color-white;
+    }
+
+    &__link {
+        margin: 2rem 0rem;
     }
 }
