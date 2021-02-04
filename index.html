@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="header__logo-box">
@@ -28,7 +29,7 @@
                 <span class="heading-primary--main">Dimitri Nakos</span>
                 <span class="heading-primary--sub">Full Stack Developer</span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">See My Projects</a>
+            <a href="#projects" class="btn btn--white btn--animated">See My Projects</a>
         </div>
     </header>
 
@@ -56,7 +57,7 @@
                         grow with a company and prove that I have what it takes to become a leading developer.
                     </p>
 
-                    <a href="#" class="btn-text">Learn More &rArr;</a>
+                    <a href="./assets/resume/DimiNakoResume.pdf" class="btn-text">Resume &rArr;</a>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
@@ -71,21 +72,20 @@
             </div>
         </section>
 
+        <!-- Features Section -->
         <section class="section-features">
-
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-skills">
                     Technical Skills
                 </h2>
             </div>
-
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-webpage-multiple"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">HTML/CSS</h3>
                         <p class="feature-box__text">
-                            Encorporate good SEO practices and modern design techniques.  Create modular designs and clean websites.
+                            Encorporate good SEO practices, clean code, and modern design techniques.  Create modular designs and clean websites.  
                         </p>
                     </div>
                 </div>
@@ -122,9 +122,10 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="section-projects">
             <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary" id="projects">
                     Check out my projects!
                 </h2>
             </div>
@@ -196,7 +197,7 @@
                                 <div class="card__link">
                                     <p class="card__back--text">Check it out!</p>
                                 </div>
-                                <a href="https://cryptic-reaches-66396.herokuapp.com/" class="btn btn--white">Website</a>
+                                <a href="https://cryptic-reaches-66396.herokuapp.com/" class="btn btn--white" target="_blank">Website</a>
                                 <div class="card__link">
                                     <p class="card__back--text">Check the code!</p>
                                 </div>
@@ -244,7 +245,34 @@
                     </div>
                 </div>
             </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="https://github.com/diminako" class="btn btn--blue" target="_blank">Check out My GITHUB</a>
+            </div>
         </section>
+
+        <!-- References Section -->
+        <section class="section-stories">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary" id="projects">
+                    References
+                </h2>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__image" src="./assets/images/bmoyer.jpg" alt="">
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            Brain Moyer, <i>Service manager - Keffer Volkswagen</i>
+                        </h3>
+                        <p>Dimitri is resourceful and inquisitive. He purposely seeks out harder assignments to learn new skills instead of settling for easy assignments. He is amiable and fun to work with. Most importantly, he helps those around him without being asked. He is natural as a team leader and an invaluable asset on any team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 

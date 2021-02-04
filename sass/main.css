@@ -15,6 +15,7 @@ light blue - #2EEAF2
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -217,6 +218,18 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-margin-top-huge {
+  margin-bottom: 10rem;
+}
+
+.u-margin-top-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-medium {
+  margin-bottom: 6rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -265,6 +278,15 @@ body {
   background-color: #fff;
 }
 
+.btn--blue {
+  background-color: #359BDB;
+  color: #fff;
+}
+
+.btn--blue::after {
+  background-color: #359BDB;
+}
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -281,6 +303,7 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
+  font-weight: 700;
   color: #359BDB;
   display: inline-block;
   text-decoration: none;
@@ -445,6 +468,8 @@ body {
   background-blend-mode: color;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .card__picture--1 {
@@ -530,6 +555,40 @@ body {
 
 .card__link {
   margin: 2rem 0rem;
+}
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+
+.story__shape {
+  width: 17rem;
+  height: 17rem;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-3rem) skewX(12deg);
+          transform: translateX(-3rem) skewX(12deg);
+}
+
+.story__image {
+  height: 100%;
+}
+
+.story__text {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
 }
 
 .header {
@@ -634,7 +693,12 @@ body {
 
 .section-projects {
   background-color: #d6d6d6;
-  padding: 20rem 0 50rem 0;
+  padding: 20rem 0 15rem 0;
   margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #d6d6d6;
 }
 /*# sourceMappingURL=main.css.map */

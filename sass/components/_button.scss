@@ -36,6 +36,14 @@
             background-color: $color-white;
         }
     }
+
+    &--blue {
+        background-color: $color-medium-blue;
+        color: $color-white;
+        &::after {
+            background-color: $color-medium-blue;
+        }
+    }
     
     &::after {
         content: "";
@@ -54,6 +62,7 @@
         &:link,
         &:visited {
             font-size: $default-font-size;
+            font-weight: 700;
             color: $color-medium-blue;
             display: inline-block;
             text-decoration: none;
